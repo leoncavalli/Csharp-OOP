@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\bunya\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\bunya\\.nuget\\packages"
+    ]
+  }
+}
