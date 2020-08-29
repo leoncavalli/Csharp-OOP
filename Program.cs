@@ -3,23 +3,23 @@
 namespace _3_OOP
 {
 
-    // Person Class
+    Person Class
 
-    // public class person
-    // {
-    //     public string adSoyad;
-    //     public int age;
-    // }
+    public class person
+    {
+        public string adSoyad;
+        public int age;
+    }
 
 
-    // Ogrenci class
+    Ogrenci class
 
-    // public class Ogrenci:person
-    // {
-    //     public int ogrNo { get; set; }
-    //     public string sube { get; set; }
+    public class Ogrenci:person
+    {
+        public int ogrNo { get; set; }
+        public string sube { get; set; }
 
-    // }
+    }
 
 
     // Car Class
@@ -89,41 +89,41 @@ namespace _3_OOP
     //    }
     //}
 
-    abstract class Shape{
-        public int width { get; set; }
-        public int height { get; set; }
+    // abstract class Shape{
+    //     public int width { get; set; }
+    //     public int height { get; set; }
 
-        public Shape(int width,int height)
-        {
-            this.width=width;
-            this.height=height;
-        }
+    //     public Shape(int width,int height)
+    //     {
+    //         this.width=width;
+    //         this.height=height;
+    //     }
 
-        public abstract void Draw();
-    }
+    //     public abstract void Draw();
+    // }
 
-    class Rectangle:Shape{
-        public Rectangle(int w,int h):base(w,h){
-            Console.WriteLine("Rectangle class running");
+    // class Rectangle:Shape{
+    //     public Rectangle(int w,int h):base(w,h){
+    //         Console.WriteLine("Rectangle class running");
 
-        }
+    //     }
 
-        public override void Draw(){
-            Console.WriteLine($"Rectangle drawed with area {this.width*this.height}");
-        }
-    }
+    //     public override void Draw(){
+    //         Console.WriteLine($"Rectangle drawed with area {this.width*this.height}");
+    //     }
+    // }
 
-    class Square:Shape{
-        public Square(int w,int h):base(w,h)
-        {
-             Console.WriteLine("Square class running");
+    // class Square:Shape{
+    //     public Square(int w,int h):base(w,h)
+    //     {
+    //          Console.WriteLine("Square class running");
 
-        }
+    //     }
 
-        public override void Draw(){
-            Console.WriteLine($"Square drawed with area {this.width*this.height}");
-        }   
-    }
+    //     public override void Draw(){
+    //         Console.WriteLine($"Square drawed with area {this.width*this.height}");
+    //     }   
+    // }
 
     // ****MainProgram*****
     class Program
@@ -194,27 +194,28 @@ namespace _3_OOP
             // car1.Menu();
 
 
+            // ******** Abstraction **********
+
+            // var shapes=new Shape[3];
+            // shapes[0]=new Rectangle(5,2);
+            // shapes[0].Draw();
+            // shapes[1]=new Square(3,4);
+            // shapes[1].Draw();
+            // shapes[2]=new Square(2,1);
+            // shapes[2].Draw();
+
             // ******** Inheritance *******
             
 
-            // Ogrenci Cinar = new Ogrenci()
-            // {
-            //     adSoyad = "Çınar",
-            //     age=15,
-            //     ogrNo = 1290,
-            //     sube = "11/C"
-            // };
+            Ogrenci Cinar = new Ogrenci()
+            {
+                adSoyad = "Çınar",
+                age=15,
+                ogrNo = 1290,
+                sube = "11/C"
+            };
 
 
-            // ******** Abstraction **********
-
-            var shapes=new Shape[3];
-            shapes[0]=new Rectangle(5,2);
-            shapes[0].Draw();
-            shapes[1]=new Square(3,4);
-            shapes[1].Draw();
-            shapes[2]=new Square(2,1);
-            shapes[2].Draw();
 
 
 
